@@ -6,6 +6,8 @@ import Color from "./../components/random-color/color";
 import StarRating from "../components/star-rating/star";
 import HomePage from "../components/Home/homepage";
 import ImageSlider from "./../components/image-slider/imageSlider";
+import Nav from "../components/recursive-nav/nav";
+import data from "../components/recursive-nav/data";
 
 export default function AppRoute() {
   const router = createBrowserRouter([
@@ -34,6 +36,10 @@ export default function AppRoute() {
           page={1}
         />
       ),
+    },
+    {
+      path: "tree-view",
+      element: <Nav data={data} />,
     },
   ]);
   return <RouterProvider router={router} />;

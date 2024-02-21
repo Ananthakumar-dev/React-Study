@@ -30,7 +30,6 @@ export default function ImageSlider({ url, page = 1, limit = 5 }) {
     }
   }, [url]);
 
-  console.log(images);
   if (loading) {
     return <div>Loading! Please wait!!!</div>;
   }
