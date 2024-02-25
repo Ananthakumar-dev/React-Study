@@ -10,6 +10,7 @@ import Nav from "../components/recursive-nav/nav";
 import data from "../components/recursive-nav/data";
 import ColorTheme from "../components/color-theme/colorTheme";
 import TabsData from "../components/tabs/tabs-data";
+import TicTacToe from "../components/tic-tac-toe";
 
 export default function AppRoute() {
   const router = createBrowserRouter([
@@ -50,6 +51,10 @@ export default function AppRoute() {
     {
       path: "/tabs",
       element: <TabsData />,
+    },
+    {
+      path: "/tic-tac-toe",
+      element: <TicTacToe />,
     },
   ]);
   return <RouterProvider router={router} />;
