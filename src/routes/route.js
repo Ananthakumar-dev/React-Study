@@ -8,6 +8,8 @@ import HomePage from "../components/Home/homepage";
 import ImageSlider from "./../components/image-slider/imageSlider";
 import Nav from "../components/recursive-nav/nav";
 import data from "../components/recursive-nav/data";
+import ColorTheme from "../components/color-theme/colorTheme";
+import TabsData from "../components/tabs/tabs-data";
 
 export default function AppRoute() {
   const router = createBrowserRouter([
@@ -40,6 +42,14 @@ export default function AppRoute() {
     {
       path: "tree-view",
       element: <Nav data={data} />,
+    },
+    {
+      path: "/color-theme",
+      element: <ColorTheme />,
+    },
+    {
+      path: "/tabs",
+      element: <TabsData />,
     },
   ]);
   return <RouterProvider router={router} />;

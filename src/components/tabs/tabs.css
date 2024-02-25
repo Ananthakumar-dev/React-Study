@@ -1,0 +1,18 @@
+.wrapper {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.tab-label {
+  padding: 20px;
+  background-color: orange;
+  color: #fff;
+  margin-right: 2px;
+  font-weight: bold;
+}
+
+.tab-label.active {
+  background-color: blueviolet;
+  color: #fff;
+}

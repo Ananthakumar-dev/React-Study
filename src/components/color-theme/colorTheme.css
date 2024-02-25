@@ -1,0 +1,20 @@
+.light-dark-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.theme-button {
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 1rem;
+  background-color: #333333;
+  color: #ffffff;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.theme-button:hover {
+  box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+}
