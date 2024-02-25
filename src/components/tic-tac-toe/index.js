@@ -92,9 +92,16 @@ export default function TicTacToe() {
 
       <div className="contents">
         <h2>{status}</h2>
-        <button type="button" onClick={handleRestart}>
-          Restart the Game!
-        </button>
+
+        {squares.every((el) => el === "") ? null : (
+          <button
+            type="button"
+            onClick={handleRestart}
+            className="restat-button"
+          >
+            Restart the Game!
+          </button>
+        )}
       </div>
     </>
   );

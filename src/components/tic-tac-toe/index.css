@@ -14,3 +14,12 @@
   cursor: pointer;
   font-size: 40px;
 }
+
+.restat-button {
+  padding: 1rem;
+  background-color: #333;
+  color: white;
+  font-size: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
