@@ -11,6 +11,8 @@ import data from "../components/recursive-nav/data";
 import ColorTheme from "../components/color-theme/colorTheme";
 import TabsData from "../components/tabs/tabs-data";
 import TicTacToe from "../components/tic-tac-toe";
+import OutsideClick from "../components/outside-click";
+import ScrollTopBottom from "../components/scroll-top-bottom";
 
 export default function AppRoute() {
   const router = createBrowserRouter([
@@ -55,6 +57,14 @@ export default function AppRoute() {
     {
       path: "/tic-tac-toe",
       element: <TicTacToe />,
+    },
+    {
+      path: "/outside-click",
+      element: <OutsideClick />,
+    },
+    {
+      path: "/scroll-top-bottom",
+      element: <ScrollTopBottom />,
     },
   ]);
   return <RouterProvider router={router} />;

@@ -1,0 +1,19 @@
+.wrapper {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.productsList {
+  list-style-type: none;
+  text-align: left;
+}
+
+.productsList li {
+  line-height: 2rem;
+}
+
+button {
+  cursor: pointer;
+  border-radius: 5px;
+}
