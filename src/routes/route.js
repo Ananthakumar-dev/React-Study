@@ -13,6 +13,7 @@ import TabsData from "../components/tabs/tabs-data";
 import TicTacToe from "../components/tic-tac-toe";
 import OutsideClick from "../components/outside-click";
 import ScrollTopBottom from "../components/scroll-top-bottom";
+import Weather from "../components/weather";
 
 export default function AppRoute() {
   const router = createBrowserRouter([
@@ -65,6 +66,10 @@ export default function AppRoute() {
     {
       path: "/scroll-top-bottom",
       element: <ScrollTopBottom />,
+    },
+    {
+      path: "/weather-app",
+      element: <Weather />,
     },
   ]);
   return <RouterProvider router={router} />;

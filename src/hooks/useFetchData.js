@@ -5,6 +5,8 @@ export default function UseFetchData({ url, options = {} }) {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
 
+  if (!url) return;
+
   async function fetchData() {
     try {
       setLoading(true);
